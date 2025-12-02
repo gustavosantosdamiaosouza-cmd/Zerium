@@ -3,172 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zerium</title>
+    <title>Top Produtos – Shopee & Mercado Livre</title>
 
     <style>
         body {
             margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background: #0f0f17;
-            color: #ffffff;
+            padding: 0;
+            background: #ffffff;
+            font-family: Arial, sans-serif;
         }
 
         header {
-            padding: 20px 40px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            background: #0a0a10;
-            border-bottom: 1px solid #1d1d2e;
-        }
-
-        .logo {
-            font-size: 26px;
-            font-weight: bold;
-            color: #b38bff;
-        }
-
-        main {
-            padding: 40px 20px;
-            max-width: 1000px;
-            margin: auto;
-        }
-
-        .hero {
-            background: #161622;
-            padding: 40px;
-            border-radius: 14px;
+            width: 100%;
+            background: #ff6600;
+            color: white;
             text-align: center;
-            border: 1px solid #24243a;
-        }
-
-        .hero h1 {
-            font-size: 32px;
+            padding: 25px 0;
+            font-size: 28px;
             font-weight: bold;
-            margin-bottom: 15px;
         }
 
-        .hero p {
-            font-size: 16px;
-            color: #cfcfe8;
-            margin-bottom: 25px;
-        }
-
-        .btns {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            flex-wrap: wrap;
-        }
-
-        .btn {
-            padding: 12px 22px;
-            background: #b38bff;
-            color: #000;
-            border-radius: 10px;
-            font-weight: bold;
-            cursor: pointer;
-            transition: 0.2s;
-            text-decoration: none;
-        }
-
-        .btn:hover {
-            background: #c7a5ff;
-        }
-
-        .categories-title {
-            text-align: center;
-            margin-top: 60px;
-            font-size: 26px;
-            color: #dcdcff;
-        }
-
-        .cards {
-            margin-top: 25px;
-            display: grid;
-            gap: 20px;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 10px;
         }
 
         .card {
-            background: #1a1a28;
-            padding: 20px;
+            background: #ffffff;
             border-radius: 12px;
-            border: 1px solid #28283f;
+            box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
+            padding: 25px;
+            margin-bottom: 35px;
+            text-align: center;
         }
 
-        .card h3 {
-            margin: 0;
-            margin-bottom: 10px;
-            font-size: 20px;
-            color: #b38bff;
+        .card h2 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 15px;
         }
 
         .card p {
-            margin: 0;
-            margin-bottom: 15px;
-            color: #c9c9e0;
+            font-size: 18px;
+            color: #444;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 20px;
+            background: #ff6600;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            transition: 0.2s;
+        }
+
+        .btn:hover {
+            background: #e65a00;
         }
 
         footer {
             text-align: center;
-            margin-top: 60px;
-            padding: 25px;
-            color: #9e9ebb;
+            padding: 20px;
+            margin-top: 50px;
+            background: #222;
+            color: white;
             font-size: 14px;
         }
     </style>
 </head>
-
 <body>
 
-    <header>
-        <div class="logo">Zerium</div>
-    </header>
+<header>
+    Top Produtos – Shopee & Mercado Livre
+</header>
 
-    <main>
+<div class="container">
 
-        <!-- HERO / TOPO -->
-        <section class="hero">
-            <h1>Achados e ofertas selecionadas — tudo em um só lugar</h1>
-            <p>Ofertas organizadas e selecionadas com cuidado, incluindo links diretos para Amazon, Shopee e outros marketplaces.</p>
+    <!-- CARD SHOPEE -->
+    <div class="card">
+        <h2>Top Produtos da Shopee</h2>
+        <p>Clique no botão abaixo para ver os produtos mais vendidos da Shopee.</p>
+        <a href="#" class="btn">Clique Aqui Para Ver</a>
+    </div>
 
-            <div class="btns">
-                <a class="btn" href="#">Ver produtos</a>
-                <a class="btn" href="#">Explorar categorias</a>
-            </div>
-        </section>
+    <!-- CARD MERCADO LIVRE -->
+    <div class="card">
+        <h2>Top Produtos do Mercado Livre</h2>
+        <p>Clique no botão abaixo para ver os produtos mais vendidos do Mercado Livre.</p>
+        <a href="#" class="btn">Clique Aqui Para Ver</a>
+    </div>
 
-        <!-- CATEGORIAS -->
-        <h2 class="categories-title">Nossas categorias</h2>
+</div>
 
-        <div class="cards">
-
-            <div class="card">
-                <h3>Beleza e Skin Care</h3>
-                <p>Produtos selecionados e confiáveis de cuidados pessoais.</p>
-                <a class="btn" href="#">Ver ofertas</a>
-            </div>
-
-            <div class="card">
-                <h3>Eletrônicos</h3>
-                <p>Gadgets, acessórios, itens úteis e aprovados.</p>
-                <a class="btn" href="#">Ver eletrônicos</a>
-            </div>
-
-            <div class="card">
-                <h3>Acessórios variados</h3>
-                <p>Itens populares, úteis e com ótimo custo-benefício.</p>
-                <a class="btn" href="#">Explorar acessórios</a>
-            </div>
-
-        </div>
-
-    </main>
-
-    <footer>
-        © 2025 Zerium — Todos os direitos reservados.
-    </footer>
+<footer>
+    © 2025 – Lista de Produtos Populares
+</footer>
 
 </body>
 </html>
